@@ -11,7 +11,7 @@ public class Main {
 
 
         SetPlayGround setPlayGround = new SetPlayGround();
-        setPlayGround.doTheHashSetOfStringThing();
+        setPlayGround.provedThatHashSetDoNotKeepObjectsInOrder();
         setPlayGround.doTheLinkedSetOfStringThing();
 
 

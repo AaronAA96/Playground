@@ -1,6 +1,5 @@
 package org.example;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -25,7 +24,7 @@ public class SetPlayGround {
         this.linkedSetOfString = linkedSetOfString;
     }
 
-    public void doTheHashSetOfStringThing() {
+    public void provedThatHashSetDoNotKeepObjectsInOrder() {
 
        System.out.println("This is a hash Set Printed out.");
 
@@ -36,7 +35,7 @@ public class SetPlayGround {
        hashSetOfString.add("you");
 
        System.out.println(hashSetOfString);
-       System.out.println("This should not be in order. \n");
+       System.out.println("This should not be in order. And cannot add same objects to set. \n");
     }
 
     public void doTheLinkedSetOfStringThing() {
