@@ -7,13 +7,49 @@ import java.util.Set;
 
 public class SetPlayGround {
 
+    private Set<String> hashSetOfString = new HashSet<>();
+    private Set<String> linkedSetOfString = new LinkedHashSet<>();
 
-    Set<String> hashSetOfString = new HashSet<>();
+    public Set<String> getLinkedSetOfString() {
+        return linkedSetOfString;
+    }
+    public void setHashSetOfString(Set<String> hashSetOfString) {
+        this.hashSetOfString = hashSetOfString;
+    }
 
-    Set<String> linkedSetOfString = new LinkedHashSet<>();
+    public Set<String> getHashSetOfString() {
+        return hashSetOfString;
+    }
 
-    public static void doTheHashSetOfStringThing() {
+    public void setLinkedSetOfString(Set<String> linkedSetOfString) {
+        this.linkedSetOfString = linkedSetOfString;
+    }
 
+    public void doTheHashSetOfStringThing() {
+
+       System.out.println("This is a hash Set Printed out.");
+
+       hashSetOfString.add("hello");
+       hashSetOfString.add("there");
+       hashSetOfString.add("how");
+       hashSetOfString.add("are");
+       hashSetOfString.add("you");
+
+       System.out.println(hashSetOfString);
+       System.out.println("This should not be in order. \n");
+    }
+
+    public void doTheLinkedSetOfStringThing() {
+
+        System.out.println("This is a Linked Set Printed out.");
+        linkedSetOfString.add("Here");
+        linkedSetOfString.add("there");
+        linkedSetOfString.add("how");
+        linkedSetOfString.add("are");
+        linkedSetOfString.add("you");
+
+        System.out.println(linkedSetOfString);
+        System.out.println("This should be in order. \n");
     }
 
 

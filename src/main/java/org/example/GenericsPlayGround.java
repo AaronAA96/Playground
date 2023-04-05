@@ -9,7 +9,7 @@ public class GenericsPlayGround<T> {
     public void demonstrateGenericsByPrintingOut(T object) {
 
 
-        System.out.println(object.toString());
+        System.out.println(object.toString() + "\n");
     }
 
 }
